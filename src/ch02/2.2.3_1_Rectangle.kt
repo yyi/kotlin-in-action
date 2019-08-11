@@ -3,8 +3,9 @@ package geometry.shapes
 import java.util.Random
 
 class Rectangle(val height: Int, val width: Int) {
-    val isSquare: Boolean
+    var isSquare: Boolean
         get() = height == width
+        set(x: Boolean) = print("test")
 }
 
 fun createRandomRectangle(): Rectangle {

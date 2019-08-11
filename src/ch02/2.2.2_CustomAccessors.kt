@@ -1,6 +1,6 @@
 package ch02.ex2_2_CustomAccessors
 
-class Rectangle(val height: Int, val width: Int) {
+class Rectangle(private val height: Int, private val width: Int) {
     val isSquare: Boolean
         get() {
             return height == width
