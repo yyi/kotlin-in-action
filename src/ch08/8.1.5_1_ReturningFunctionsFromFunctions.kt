@@ -6,15 +6,15 @@ class Order(val itemCount: Int)
 
 fun getShippingCostCalculator(
         delivery: Delivery): (Order) -> Double {
-    if (delivery == Delivery.EXPEDITED) {
-        return { order -> 6 + 2.1 * order.itemCount }
+    return when (delivery) {
+        Delivery.EXPEDITED -> { order -> 6 + 2.1 * order.itemCount }
+        Delivery.STANDARD -> { order -> 1.2 * order.itemCount }
     }
-
-    return { order -> 1.2 * order.itemCount }
 }
 
 fun main(args: Array<String>) {
     val calculator =
-        getShippingCostCalculator(Delivery.EXPEDITED)
+            getShippingCostCalculator(Delivery.EXPEDITED)
     println("Shipping costs ${calculator(Order(3))}")
+    println("Shipping costs ${getShippingCostCalculator(Delivery.STANDARD)(Order(3))}")
 }

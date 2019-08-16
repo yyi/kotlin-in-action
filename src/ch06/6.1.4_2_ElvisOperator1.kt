@@ -9,11 +9,11 @@ class Person(val name: String, val company: Company?)
 
 fun printShippingLabel(person: Person) {
     val address = person.company?.address
-      ?: throw IllegalArgumentException("No address")
-    with (address) {
+            ?: throw IllegalArgumentException("No address")
+    println("with statement return : " + with(address) {
         println(streetAddress)
         println("$zipCode $city, $country")
-    }
+    })
 }
 
 fun main(args: Array<String>) {
