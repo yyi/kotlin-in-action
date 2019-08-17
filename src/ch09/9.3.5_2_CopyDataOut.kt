@@ -9,7 +9,7 @@ fun <T> copyData(source: MutableList<out T>,
 
 fun main(args: Array<String>) {
     val ints = mutableListOf(1, 2, 3)
-    val anyItems = mutableListOf<Any>()
+    val anyItems = mutableListOf<Number>()
     copyData(ints, anyItems)
     println(anyItems)
 }

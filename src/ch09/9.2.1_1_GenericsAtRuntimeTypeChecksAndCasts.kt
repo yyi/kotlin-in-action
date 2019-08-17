@@ -7,5 +7,5 @@ fun printSum(c: Collection<*>) {
 }
 
 fun main(args: Array<String>) {
-    printSum(listOf(1, 2, 3))
+    printSum(listOf(1, 2, "a"))
 }
