@@ -11,6 +11,6 @@ fun main(args: Array<String>) {
     }
 
     for ((letter, binary) in binaryReps) {
-        println("$letter = $binary")
+        println("$letter = $binary = ${binary.toInt(2)}")
     }
 }

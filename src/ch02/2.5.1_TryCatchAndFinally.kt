@@ -17,6 +17,7 @@ fun readNumber(reader: BufferedReader): Int? {
 }
 
 fun main(args: Array<String>) {
-    val reader = BufferedReader(StringReader("239"))
-    println(readNumber(reader))
+    val reader = BufferedReader(StringReader("239a"))
+    var message : Int? = readNumber(reader)
+    println(message?:"hello")
 }
