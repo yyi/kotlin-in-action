@@ -5,7 +5,7 @@ interface Clickable {
     fun showOff() = println("I'm clickable!")
 }
 
-open class RichButton : Clickable {
+abstract class RichButton : Clickable {
 
     fun disable() {}
 
