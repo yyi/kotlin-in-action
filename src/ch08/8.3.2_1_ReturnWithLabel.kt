@@ -6,7 +6,7 @@ val people = listOf(Person("Alice", 29), Person("Bob", 31))
 
 fun lookForAlice(people: List<Person>) {
     people.forEach label@{
-        if (it.name == "Alice") return@label
+        if (it.name == "Alice") return@label  //return
     }
     println("Alice might be somewhere")
 }

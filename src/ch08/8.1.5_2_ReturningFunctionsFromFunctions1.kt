@@ -17,8 +17,10 @@ class ContactListFilters {
         if (!onlyWithPhoneNumber) {
             return startsWithPrefix
         }
-        return { startsWithPrefix(it)
-                    && it.phoneNumber != null }
+        return {
+            startsWithPrefix(it)
+                    && it.phoneNumber != null
+        }
     }
 }
 
