@@ -2,7 +2,7 @@ package ch09.ex3_1_WhyVarianceExists
 
 import java.lang.StringBuilder
 
-fun <T:CharSequence>printContents(list: List<out T>) {
+fun <T:CharSequence>printContents(list: List<T>) {
     println(list.joinToString())
 }
 

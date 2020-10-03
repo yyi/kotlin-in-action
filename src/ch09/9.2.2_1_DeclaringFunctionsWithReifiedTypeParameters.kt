@@ -8,5 +8,5 @@ fun main(args: Array<String>) {
     println(isA<String>("abc"))
     println(isA<String>(123))
     println(createA<String>())
-    println(createA<Int>())
+//    println(createA<Int>())
 }
