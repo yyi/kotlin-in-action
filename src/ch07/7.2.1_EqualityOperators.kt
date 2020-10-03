@@ -1,10 +1,9 @@
 package ch07.ex2_1_EqualityOperators
 
 class Point(val x: Int, val y: Int) {
-    override fun equals(obj: Any?): Boolean {
-        if (obj === this) return true
-        if (obj !is Point) return false
-        return obj.x == x && obj.y == y
+    override fun equals(other: Any?): Boolean {
+        val obj2 = other as? Point ?: return false
+        return obj2.x == x && obj2.y == y
     }
 }
 

@@ -1,7 +1,5 @@
 package ch07.ex4_3_DestructuringDeclarations2
 
-import java.io.File
-
 data class NameComponents(
         val name: String,
         val extension: String)

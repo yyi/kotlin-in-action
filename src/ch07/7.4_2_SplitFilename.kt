@@ -1,7 +1,5 @@
 package ch07.SplitFilename
 
-import java.io.File
-
 data class NameComponents(val name: String,
                           val extension: String)
 

@@ -5,5 +5,6 @@ import java.util.ArrayList
 fun main(args: Array<String>) {
     val numbers = ArrayList<Int>()
     numbers += 42
+    (numbers + 42) as ArrayList<Int>
     println(numbers[0])
 }
