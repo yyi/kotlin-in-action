@@ -8,8 +8,8 @@ fun <T> copyData(source: MutableList<out T>,
 }
 
 fun main(args: Array<String>) {
-    val ints = mutableListOf(1, 2, 3)
-    val anyItems = mutableListOf<Number>()
+    val ints = mutableListOf(1, 2, 3,"a")
+    val anyItems = mutableListOf<Any?>()
     copyData(ints, anyItems)
     println(anyItems)
 }
